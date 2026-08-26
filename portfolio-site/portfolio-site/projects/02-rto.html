@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTO 설비 모니터링·제어 시스템 — 황동헌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="nav-logo">황동헌</div>
+    <a class="nav-back" href="../index.html#project">← Home</a>
+  </div>
+</header>
+
+<section class="proj-header reveal" style="border-bottom: none;">
+  <div class="container" style="display: flex; flex-direction: column; gap: 18px;">
+    <span class="badge">Project 02</span>
+    <h1>HD현대중공업 RTO 설비 모니터링·제어 시스템</h1>
+    <div class="proj-meta">
+      <div>기간: <strong>[추가 정보 필요]</strong></div>
+      <div>역할: <strong>개인 담당 (현장실습 중, 기획~구현 단독 수행)</strong></div>
+    </div>
+    <div class="chip-row">
+      <span class="chip">SCADA</span><span class="chip">HMI</span><span class="chip">Sensor Data</span><span class="chip">Manufacturing IT</span>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="reveal">
+    <div class="section-head"><span class="badge">01</span><h2>배경 / 문제</h2></div>
+    <div class="detail-body">
+      <p>RTO 설비와 도장/건조 부스의 상태·환경 데이터를 체계적으로 모니터링하고 운영 효율을 높이려면, 설비 상태·VOCs 농도·온습도·유속·전압/전류/전력량 확인, 이상 상태 알람, 원격 제어, 일정 기반 운전, 설비 효율 분석 기능이 필요했습니다.</p>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="section-head"><span class="badge">02</span><h2>역할과 책임</h2></div>
+    <ul class="role-list">
+      <li>현장 요구사항 분석, 설비 기능 분석</li>
+      <li>사용자 관점의 모니터링 요구사항 정리</li>
+      <li>Siemens SCADA / AVEVA SCADA 사례 참고</li>
+      <li>HMI 화면 구성 설계</li>
+      <li>센서 및 데이터 항목 정리</li>
+      <li>모니터링/제어 시스템 기능 구조 설계 및 구현 (단독 수행)</li>
+    </ul>
+  </section>
+
+  <section class="reveal">
+    <div class="section-head"><span class="badge">03</span><h2>아키텍처 / 시스템 구조</h2></div>
+    <div class="arch-box">현장 설비 분석 → 사용자 요구사항 분석 → 모니터링 항목 정의<br>→ 센서 데이터 구조화 → SCADA/HMI 기능 설계 → 원격 제어 / Alarm / Scheduling → 효율 분석</div>
+    <div class="arch-summary">비기술 요약: 현장의 센서 데이터를 한 화면(HMI)에서 확인하고, 필요하면 원격으로 설비를 제어하거나 일정에 따라 자동으로 운전할 수 있게 만든 시스템입니다.</div>
+  </section>
+
+  <section class="reveal">
+    <div class="section-head"><span class="badge">04</span><h2>핵심 기능 / 구현 포인트</h2></div>
+    <div class="chip-row">
+      <span class="chip">Main Monitoring (온도·습도·유속·VOCs·전압·전류·전력량)</span>
+    </div>
+    <div class="chip-row" style="margin-top: 8px;">
+      <span class="chip">HMI 시각화</span><span class="chip">Remote Control</span><span class="chip">Scheduling</span>
+      <span class="chip">Alarm</span><span class="chip">효율 Analysis</span>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="section-head"><span class="badge">05</span><h2>정량적 성과</h2></div>
+    <div class="need-info">[추가 정보 필요 — 운영 효율 개선치, 실제 적용 여부]</div>
+  </section>
+
+  <section class="reveal">
+    <div class="section-head"><span class="badge">06</span><h2>산출물 / 증빙</h2></div>
+    <div class="output-grid">
+      <div class="output-box">시스템 구조도</div>
+      <div class="output-box">HMI 목업<br>[확인 필요]</div>
+      <div class="output-box">실제 화면/프로토타입<br>[확인 필요]</div>
+    </div>
+  </section>
+
+  <section class="reveal" style="border-bottom: none;">
+    <div class="section-head"><span class="badge">07</span><h2>회고</h2></div>
+    <div class="need-info">[추가 정보 필요]</div>
+  </section>
+
+</main>
+
+<div class="prevnext">
+  <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+    <a href="01-private-ai.html">
+      ← 이전 프로젝트
+      <span class="pn-name">Private AI/MCP 업무지원 플랫폼</span>
+    </a>
+    <a class="pn-next" href="03-welding.html">
+      다음 프로젝트 →
+      <span class="pn-name">AI 용접 검사 자동화</span>
+    </a>
+  </div>
+</div>
+
+<script src="../script.js" defer></script>
+</body>
+</html>
